@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import AstronomyCard from './AstronomyCard';
 import axios from 'axios';
 
+//Should be functional component
+//Use useEffect instead of componentDidMount
 class AstronomyContainer extends Component{
 
     constructor() {
