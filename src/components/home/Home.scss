@@ -1,0 +1,18 @@
+.Home {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+
+    .Home-header {
+        height: 5%;
+        width: 100%;
+        display: flex;
+        background-color: grey;
+        padding: 0.5%;
+
+        .Company-name-span {
+            color: white;
+            height: 100%;
+        }
+    }
+}
