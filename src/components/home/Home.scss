@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+
+$merriweather: "Merriweather", sans-serif;
+
+body {
+  height: 95%;
+  width: 99%;
+  background: black;
+  font-family: $merriweather;
+}
+
+.home {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+
+    .home-header {
+        height: 92px;
+        width: 100%;
+        display: flex;
+        background-color: grey;
+        padding: 0.5%;
+
+        .logo-title-div {
+            height: 100%;
+
+            .company-name-span {
+                color: black;
+            }
+        }
+    }
+}
