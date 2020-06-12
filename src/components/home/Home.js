@@ -4,9 +4,9 @@ import AstronomyContainer from '../astronomy/AstronomyContainer'
 
 function Home() {
     return (
-      <div className="Home">
-        <header className="Home-header">
-            <span className="Company-name-span">
+      <div className="home">
+        <header className="home-header">
+            <span className="company-name-span">
               Central Testing Laboratory, Inc
             </span>
         </header>

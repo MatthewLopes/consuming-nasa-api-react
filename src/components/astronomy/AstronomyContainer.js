@@ -18,12 +18,9 @@ class AstronomyContainer extends Component{
 
         axios.get(END_POINT+API_KEY)
             .then(response => {
-
                 this.setState({
                     astronomy: response.data
                 })
-
-                console.log(this.state.astronomy)
             })
             .catch(error => {
                 console.log(error, 'failed to fetch data')
