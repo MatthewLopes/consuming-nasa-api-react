@@ -11,8 +11,8 @@ const AstronomyCard = (props) => {
             <a href={hdurl} className="astronomy-image-wrapper">
                 <img src={url} alt={title} />
             </a>
-            <p>{explanation}</p>
-            <span>{date}, {copyright}</span>
+            <p className="explanation-paragraph">{explanation}</p>
+            <span className="date-span">{date} {copyright}</span>
         </div>
     )
 }
