@@ -15,15 +15,18 @@ body {
     background-color: black;
 
     .home-header {
-        height: 5%;
+        height: 92px;
         width: 100%;
         display: flex;
         background-color: grey;
         padding: 0.5%;
 
-        .company-name-span {
-            color: white;
+        .logo-title-div {
             height: 100%;
+
+            .company-name-span {
+                color: black;
+            }
         }
     }
 }
