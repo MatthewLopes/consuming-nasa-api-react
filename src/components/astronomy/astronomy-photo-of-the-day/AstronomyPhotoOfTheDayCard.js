@@ -1,14 +1,14 @@
 import React from 'react';
-import './Astronomy.scss';
+import './AstronomyPhotoOfTheDay.scss';
 
-const AstronomyCard = (props) => {
+const AstronomyPhotoOfTheDayCard = (props) => {
 
     const {title, url, hdurl, explanation, date, copyright } = props.data;
 
     return (
-        <div className="astronomy-card">
-            <h6 className="astronomy-title">{title}</h6>
-            <a href={hdurl} className="astronomy-image-wrapper">
+        <div className="card">
+            <h6 className="title">{title}</h6>
+            <a href={hdurl} className="image-wrapper">
                 <img src={url} alt={title} />
             </a>
             <p className="explanation-paragraph">{explanation}</p>
@@ -17,4 +17,4 @@ const AstronomyCard = (props) => {
     )
 }
 
-export default AstronomyCard;
+export default AstronomyPhotoOfTheDayCard;
