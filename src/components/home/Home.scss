@@ -17,15 +17,24 @@ body {
     .home-header {
         height: 92px;
         width: 100%;
-        display: flex;
         background-color: grey;
         padding: 0.5%;
 
         .logo-title-div {
             height: 100%;
+            width: 100%;
+            display: flex;
+            line-height: 100px;
+            white-space: nowrap;
+            justify-content: space-between;
 
             .company-name-span {
                 color: black;
+                justify-content: space-evenly;
+            }
+
+            .api-buttons-div {
+                justify-content: space-evenly;
             }
         }
     }

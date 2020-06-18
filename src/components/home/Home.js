@@ -1,6 +1,7 @@
 import React from 'react';
 import './Home.scss';
-import AstronomyContainer from '../astronomy/AstronomyContainer'
+import AstronomyPictureOfTheDay from '../astronomy/astronomy-photo-of-the-day/AstronomyPictureOfTheDay'
+import EarthPolychromaticImagingCamera from '../astronomy/earth-polychromatic-imaging-camera/EarthPolychromaticImagingCamera'
 import NASA_Meatball_Logo from '../../assets/images/NASA_Meatball_Logo.svg'
 
 function Home() {
@@ -12,11 +13,15 @@ function Home() {
             <span className="company-name-span">
               React UI where I consume NASA APIs
             </span>
+            <div className="api-buttons-div">
+              <button>APOD</button>
+              <button>EPIC</button>
+            </div>
           </div>
         </header>
-        <body>
-          <AstronomyContainer />
-        </body>
+        <div>
+          <EarthPolychromaticImagingCamera />
+        </div>
       </div>
     );
   }
