@@ -20,6 +20,7 @@ function Home() {
           </div>
         </header>
         <div>
+          <AstronomyPictureOfTheDay />
           <EarthPolychromaticImagingCamera />
         </div>
       </div>
