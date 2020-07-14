@@ -3,7 +3,9 @@ import './Home.scss';
 import AstronomyPictureOfTheDay from '../astronomy/astronomy-photo-of-the-day/AstronomyPictureOfTheDay'
 import EarthPolychromaticImagingCamera from '../astronomy/earth-polychromatic-imaging-camera/EarthPolychromaticImagingCamera'
 import NASA_Meatball_Logo from '../../assets/images/NASA_Meatball_Logo.svg'
-import { Link } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, Link, BrowserRouter } from 'react-router-dom';
+import NavButtons from '../../NavButtons';
+import About from './about/About'
 
 function Home() {
     return (
@@ -15,17 +17,21 @@ function Home() {
               React UI where I consume NASA APIs
             </span>
             <div className="api-buttons-div">
-              <Link to='/AstronomyPictureOfTheDay' component={AstronomyPictureOfTheDay}>
-                <button>APOD</button>
-              </Link>
-              <button>EPIC</button>
+              <BrowserRouter forceRefresh={true}>
+                <NavButtons />
+              </BrowserRouter>
             </div>
           </div>
         </header>
-        <div>
-          <AstronomyPictureOfTheDay />
-          <EarthPolychromaticImagingCamera />
-        </div>
+        <Router>
+          <div>
+            <Switch>
+              <Route path="/" exact component={About} />
+              <Route path="/apod" exact component={AstronomyPictureOfTheDay} />
+              <Route path="/epic" exact component={EarthPolychromaticImagingCamera} />
+            </Switch>
+          </div>
+        </Router>
       </div>
     );
   }
