@@ -1,0 +1,16 @@
+.component-wrapper {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+.about-header {
+    text-align: center;
+    color: white;
+    margin-top: 12px;
+    margin-bottom: 20px;
+}
+
+.about-body {
+    color: white;
+}

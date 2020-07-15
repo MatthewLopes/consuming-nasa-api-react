@@ -1,11 +1,15 @@
 import React from 'react';
-import '../../../App.css';
+import './About.css'
+import '../../../assets/animations/NasaParticleAnimation';
 
 function About() {
   return (
-    <div>
-        <h1 style={{color: "white"}}>About Page</h1>
-    </div>
+    <React.StrictMode>
+      <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script> 
+      <script src="./assets/animations/Particle.js"></script>
+      <div id="particles-js"></div>
+      <script src="particles.js"></script>
+    </React.StrictMode>
   );
 }
 
