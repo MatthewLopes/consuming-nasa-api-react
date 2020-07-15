@@ -1,4 +1,6 @@
 import React from 'react';
+import '../astronomy-photo-of-the-day/AstronomyPhotoOfTheDay.css';
+import '../../../assets/animations/NasaParticleAnimation';
 
 const EarthPolychromaticImagingCameraCard = (props) => {
 
@@ -10,12 +12,15 @@ const EarthPolychromaticImagingCameraCard = (props) => {
     const day = dateArray[2];
 
     return (
-        <div className="card">
-            <a className="image-wrapper">
-                <img src={'https://epic.gsfc.nasa.gov/archive/natural/' + year + '/' + month + '/' + day + '/png/' + image + '.png'} />
-            </a>
-            <p className="explanation-paragraph">{caption}</p>
-            <span className="date-span">{date}</span>
+        <div>
+            <div id="particles-js"></div>
+            <div className="card">
+                <a className="image-wrapper">
+                    <img src={'https://epic.gsfc.nasa.gov/archive/natural/' + year + '/' + month + '/' + day + '/png/' + image + '.png'} />
+                </a>
+                <p className="explanation-paragraph">{caption}</p>
+                <span className="date-span">{date}</span>
+            </div>
         </div>
     )
     

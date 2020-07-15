@@ -1,18 +1,24 @@
 .card {
 	max-width: 75%;
-	margin: 50px auto;
+	margin-top: 64px ;
 	display: flex;
-	background-color: white;
+	background-color: lightgray;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	position: absolute;
+	right: 0;
+    left: 0;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: auto;
 }
 
 .title {
 margin: 25px 0;
 padding: 15px 45px;
 font-size: 18px;
-color: #5a00d8;
+color: rgb(25, 25, 83);
 }
 
 .image-wrapper {

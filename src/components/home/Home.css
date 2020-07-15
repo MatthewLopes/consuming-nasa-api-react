@@ -14,10 +14,11 @@ body {
 }
 
 .home-header {
-height: 92px;
-width: 100%;
-background-color: grey;
-padding: 0.5%;
+    height: 81px;
+    /* height: 2%; */
+    width: 100%;
+    background-color: lightgray;
+    padding: 0.5%;
 }
 
 .logo-title-div {
