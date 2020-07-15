@@ -1,5 +1,5 @@
 import React from 'react';
-import './AstronomyPhotoOfTheDay.scss';
+import './AstronomyPhotoOfTheDay.css';
 
 const AstronomyPhotoOfTheDayCard = (props) => {
 
