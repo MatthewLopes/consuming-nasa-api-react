@@ -1,0 +1,42 @@
+.card {
+	max-width: 75%;
+	margin: 50px auto;
+	display: flex;
+	background-color: white;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.title {
+margin: 25px 0;
+padding: 15px 45px;
+font-size: 18px;
+color: #5a00d8;
+}
+
+.image-wrapper {
+padding: 10px;
+}
+
+img {
+	cursor: pointer;
+	max-height: 500px;
+	transition: all 325ms ease-in-out;
+}
+
+img:hover {
+	transform: scale(1.05);
+}
+
+.explanation-paragraph {
+font-size: 12px;
+padding: 10px 50px;
+letter-spacing: 0.66px;
+line-height: 2;
+}
+
+.date-span {
+font-size: 10px;
+margin: 20px 0;
+}

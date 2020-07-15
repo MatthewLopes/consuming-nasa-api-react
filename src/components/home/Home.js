@@ -1,5 +1,5 @@
 import React from 'react';
-import './Home.scss';
+import './Home.css';
 import AstronomyPictureOfTheDay from '../astronomy/astronomy-photo-of-the-day/AstronomyPictureOfTheDay'
 import EarthPolychromaticImagingCamera from '../astronomy/earth-polychromatic-imaging-camera/EarthPolychromaticImagingCamera'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
