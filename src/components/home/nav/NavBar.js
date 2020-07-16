@@ -1,6 +1,6 @@
 import React from 'react';
 import '../../../App.css';
-import '../Home.scss';
+import '../Home.css';
 import { BrowserRouter } from 'react-router-dom';
 import NASA_Meatball_Logo from '../../../assets/images/NASA_Meatball_Logo.svg'
 import NavButtons from './NavButtons'
