@@ -9,12 +9,16 @@ nav {
   min-height: 10vh;
 }
 
-nav-buttons {
+.nav-buttons {
   width: 20%;
   display: flex;
   justify-content: space-around;
   align-items: center;
   list-style: none;
+}
+
+.button {
+  background-color: red;
 }
 
 .App-logo {
