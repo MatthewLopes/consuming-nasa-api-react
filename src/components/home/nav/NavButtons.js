@@ -9,13 +9,13 @@ function NavButtons() {
         <nav>
             <div className="nav-buttons">
                 <Link to="/">
-                  <button onClick={() => history.push('/about')}>About</button>
+                  <button className="button" onClick={() => history.push('/about')}>About</button>
                 </Link>
                 <Link to="/apod">
-                  <button onClick={() => history.push('/apod')}>APOD</button>
+                  <button className="button"  onClick={() => history.push('/apod')}>APOD</button>
                 </Link>
                 <Link to="/epic">
-                  <button onClick={() => history.push('/epic')}>EPIC</button>
+                  <button className="button"  onClick={() => history.push('/epic')}>EPIC</button>
                 </Link>
             </div>
         </nav>

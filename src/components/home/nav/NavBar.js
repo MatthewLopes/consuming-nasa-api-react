@@ -10,9 +10,9 @@ function NavBar() {
         <header className="home-header">
           <div className="logo-title-div">
             <img src={NASA_Meatball_Logo} alt="NASA Meatball Logo" />
-            <span className="company-name-span">
+            <h1 className="company-name-span">
               React UI where I consume NASA APIs
-            </span>
+            </h1>
             <div className="api-buttons-div">
               <BrowserRouter forceRefresh={true}>
                 <NavButtons />
