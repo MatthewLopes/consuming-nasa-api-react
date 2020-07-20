@@ -1,5 +1,5 @@
 import React from 'react';
-import '../astronomy-photo-of-the-day/AstronomyPhotoOfTheDay.css';
+import '../astronomy-picture-of-the-day/AstronomyPictureOfTheDay.css';
 import '../../../assets/animations/NasaParticleAnimation';
 
 const EarthPolychromaticImagingCameraCard = (props) => {
