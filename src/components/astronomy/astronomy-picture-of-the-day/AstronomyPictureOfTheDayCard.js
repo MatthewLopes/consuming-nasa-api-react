@@ -1,7 +1,7 @@
 import React from 'react';
-import './AstronomyPhotoOfTheDay.css';
+import './AstronomyPictureOfTheDay.css';
 
-const AstronomyPhotoOfTheDayCard = (props) => {
+const AstronomyPictureOfTheDayCard = (props) => {
 
     const {title, url, hdurl, explanation, date, copyright } = props.data;
 
@@ -20,4 +20,4 @@ const AstronomyPhotoOfTheDayCard = (props) => {
     )
 }
 
-export default AstronomyPhotoOfTheDayCard;
+export default AstronomyPictureOfTheDayCard;

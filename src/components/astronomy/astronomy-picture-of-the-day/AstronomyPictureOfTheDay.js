@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import AstronomyPhotoOfTheDayCard from './AstronomyPhotoOfTheDayCard';
+import AstronomyPictureOfTheDayCard from './AstronomyPictureOfTheDayCard';
 import axios from 'axios';
 
 class AstronomyPictureOfTheDay extends Component{
@@ -8,7 +8,7 @@ class AstronomyPictureOfTheDay extends Component{
         super();
 
         this.state = {
-            astronomyPhotoOfTheDay: []
+            astronomyPictureOfTheDay: []
         }
     }
 
@@ -19,7 +19,7 @@ class AstronomyPictureOfTheDay extends Component{
         axios.get(END_POINT+API_KEY)
             .then(response => {
                 this.setState({
-                    astronomyPhotoOfTheDay: response.data
+                    astronomyPictureOfTheDay: response.data
                 })
             })
             .catch(error => {
@@ -28,9 +28,9 @@ class AstronomyPictureOfTheDay extends Component{
     }
 
     render() {
-        const { astronomyPhotoOfTheDay } = this.state;
+        const { astronomyPictureOfTheDay } = this.state;
         return (
-            <AstronomyPhotoOfTheDayCard data={astronomyPhotoOfTheDay} />
+            <AstronomyPictureOfTheDayCard data={astronomyPictureOfTheDay} />
         )
     }
 }
